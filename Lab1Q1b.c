@@ -1,19 +1,27 @@
 //Implement the fork() system call and print the parent and child ID in C
 
-#include <stdio.h> 
-#include <sys/types.h> 
-#include <unistd.h> 
-int main() 
-{ 
-	int pid;
-    pid = fork(); 
-  
-  	if (pid == 0) {/* child process */
-     printf("CHILD: id = %d", getpid()); /* LINE C */
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+int main(void) {
+  pid_t pid = fork();
+
+  if(pid == 0) {
+    printf("Child => PPID: %d PID: %d\n", getppid(), getpid());
+    exit(EXIT_SUCCESS);
   }
-  
-    else if (pid > 0) { /* parent provess */
-     printf("PARENT: id = %d ", getpid()); /* LINE P */
+  else if(pid > 0) {
+    printf("Parent => PID: %d\n", getpid());
+    printf("Waiting for child process to finish.\n");
+    wait(NULL);
+    printf("Child process finished.\n");
   }
-    return 0; 
+  else {
+    printf("Unable to create child process.\n");
+  }
+
+  return EXIT_SUCCESS;
 }
