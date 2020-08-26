@@ -25,7 +25,7 @@ quicksort(a,0,n-1);
 printf(“\nAfter quick sorting elements are: “);
 
 for(i=0;i<n;i++)
-printf(” %d”,a[i]);
+  printf(” %d”,a[i]);
 }
 else 
 {
