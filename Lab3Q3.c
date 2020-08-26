@@ -30,6 +30,5 @@ int main()
           printf("End of Child 1\n");
         
     } 
-  
     return 0; 
 } 
