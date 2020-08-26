@@ -19,6 +19,7 @@ int main(void) {
     wait(NULL);
     printf("Child process finished.\n");
   }
+  
   else {
     printf("Unable to create child process.\n");
   }
