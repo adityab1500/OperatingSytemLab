@@ -28,6 +28,7 @@ pthread_attr_t attr;
      printf(“PARENT: value = %d”, value); /* LINE P */
   }
 }
+
 void *runner(void *param) {
   value = 5;
   pthread_exit(0);
