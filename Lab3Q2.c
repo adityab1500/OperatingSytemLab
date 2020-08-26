@@ -18,6 +18,7 @@ int main()
        message = "This is the child\n";
        n = 2;
      }    
+ 
     else{
        message = "This is the parent\n";
        n = 5;
