@@ -9,6 +9,7 @@ int main(){
             child_pid=fork(); 
         }
     }
+    
     else{ 
         child_pid= 0;
         child_pid=fork(); 
