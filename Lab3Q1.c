@@ -1,4 +1,4 @@
-//"An orphan process is a computer process whose parent process has finished or terminated, though it remains running itself." 
+//An orphan process is a computer process whose parent process has finished or terminated, though it remains running itself.
 //Write a C program for orphan process using the fork() system call. 
 
 #include<stdio.h> 
