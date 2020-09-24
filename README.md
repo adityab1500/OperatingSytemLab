@@ -32,3 +32,6 @@ Assignment-6
 Assignment-7
 1. Producerconsumer.c
 2. Readerwriter.c
+
+Assignment-8
+1. DigitalPhilosopher.c
