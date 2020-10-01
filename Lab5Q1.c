@@ -9,8 +9,10 @@
 #include<stdio.h>
 int goal=0;
 long fib[500];
+int fact[10];
 void *runner(void *param)
 {
+	// Base condition
 	if(goal<=0)
 		pthread_exit(0);
 	fib[0]=0;
@@ -21,6 +23,12 @@ void *runner(void *param)
 			fib[i]=fib[i-1]+fib[i-2];
 		pthread_exit(0);
 	}
+}
+// find factorial upto 10
+int Find(){
+	fact[0] = 1;
+	for(int i=1;i<10;i++)
+		fact[i] = (fact[i-1]*i);
 }
 int main(int argc, char *argv[])
 {
