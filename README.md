@@ -34,4 +34,10 @@ Assignment-7
 2. Readerwriter.c
 
 Assignment-8
-1. DigitalPhilosopher.c
+1. Diner's Philosopher.c
+
+Assignment-9
+1. Banker's Algorithm.cpp
+
+Assignment-10
+1. Implementation of FCFS Disk Scheduling
